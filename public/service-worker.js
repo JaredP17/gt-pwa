@@ -24,11 +24,9 @@ self.addEventListener("install", function (evt) {
         cache
           .addAll(FILES_TO_CACHE)
           .then((result) => {
-            // debugger;
             console.log("result of add all", result);
           })
           .catch((err) => {
-            // debugger;
             console.log("Add all error: ", err);
           });
       })
